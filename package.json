@@ -1,6 +1,6 @@
 {
     "private": true,
-    "types": "../dist/mini.d.ts",
-    "main": "../dist/cjs/mini.js",
-    "module": "../dist/es/mini.mjs"
+    "types": "../dist/m.d.ts",
+    "main": "../dist/cjs/m.js",
+    "module": "../dist/es/m.mjs"
 }
