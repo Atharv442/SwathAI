@@ -1,0 +1,90 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile information",
+      "type": "object",
+      "properties": {
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["email", "createdAt"]
+    },
+    "HealthRecord": {
+      "title": "Health Record",
+      "description": "Analysis results from symptoms or lab reports",
+      "type": "object",
+      "properties": {
+        "type": { "type": "string", "enum": ["symptom", "report", "risk"] },
+        "content": { "type": "string" },
+        "summary": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "metadata": { "type": "object" }
+      },
+      "required": ["type", "content", "timestamp"]
+    },
+    "Medication": {
+      "title": "Medication",
+      "description": "Medicine reminders for the user",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "dosage": { "type": "string" },
+        "time": { "type": "string" },
+        "type": { "type": "string", "enum": ["tablet", "syrup", "injection"] },
+        "completed": { "type": "boolean" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "time", "completed"]
+    },
+    "FamilyMember": {
+      "title": "Family Member",
+      "description": "Emergency contact linked for family sync",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "relation": { "type": "string" },
+        "isSynced": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "email", "isSynced", "createdAt"]
+    },
+    "Preference": {
+      "title": "User Preference",
+      "description": "App settings and preferences (e.g. Sathi meal settings)",
+      "type": "object",
+      "properties": {
+        "preset": { "type": "string" },
+        "meals": { "type": "array" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Individual user profiles"
+    },
+    "/users/{userId}/records/{recordId}": {
+      "schema": "HealthRecord",
+      "description": "Historical health analyses for a specific user"
+    },
+    "/users/{userId}/medications/{medId}": {
+      "schema": "Medication",
+      "description": "Medication reminders for a specific user"
+    },
+    "/users/{userId}/family/{memberId}": {
+      "schema": "FamilyMember",
+      "description": "Linked family members for emergency synchronization"
+    },
+    "/users/{userId}/preferences/{prefId}": {
+      "schema": "Preference",
+      "description": "User specific settings and tool presets"
+    }
+  }
+}
