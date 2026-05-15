@@ -1,0 +1,121 @@
+{
+  "hash": "d9ccd204",
+  "configHash": "ba3eb368",
+  "lockfileHash": "5c66091d",
+  "browserHash": "2170a8e5",
+  "optimized": {
+    "react": {
+      "src": "../../react/index.js",
+      "file": "react.js",
+      "fileHash": "830b1782",
+      "needsInterop": true
+    },
+    "react-dom": {
+      "src": "../../react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "1f9d0596",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "b867311d",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "ba9e9253",
+      "needsInterop": true
+    },
+    "@google/genai": {
+      "src": "../../@google/genai/dist/web/index.mjs",
+      "file": "@google_genai.js",
+      "fileHash": "340fb08f",
+      "needsInterop": false
+    },
+    "@vis.gl/react-google-maps": {
+      "src": "../../@vis.gl/react-google-maps/dist/index.modern.mjs",
+      "file": "@vis__gl_react-google-maps.js",
+      "fileHash": "e1c34299",
+      "needsInterop": false
+    },
+    "clsx": {
+      "src": "../../clsx/dist/clsx.mjs",
+      "file": "clsx.js",
+      "fileHash": "3dbfb2b1",
+      "needsInterop": false
+    },
+    "i18next": {
+      "src": "../../i18next/dist/esm/i18next.js",
+      "file": "i18next.js",
+      "fileHash": "4d7d5221",
+      "needsInterop": false
+    },
+    "i18next-browser-languagedetector": {
+      "src": "../../i18next-browser-languagedetector/dist/esm/i18nextBrowserLanguageDetector.js",
+      "file": "i18next-browser-languagedetector.js",
+      "fileHash": "6d212902",
+      "needsInterop": false
+    },
+    "lucide-react": {
+      "src": "../../lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "8b9db4a8",
+      "needsInterop": false
+    },
+    "motion/react": {
+      "src": "../../motion/dist/es/react.mjs",
+      "file": "motion_react.js",
+      "fileHash": "c625823c",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "29c17a3a",
+      "needsInterop": true
+    },
+    "react-i18next": {
+      "src": "../../react-i18next/dist/es/index.js",
+      "file": "react-i18next.js",
+      "fileHash": "2179aea1",
+      "needsInterop": false
+    },
+    "react-markdown": {
+      "src": "../../react-markdown/index.js",
+      "file": "react-markdown.js",
+      "fileHash": "2d3ffecc",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "6f875d13",
+      "needsInterop": false
+    },
+    "tailwind-merge": {
+      "src": "../../tailwind-merge/dist/bundle-mjs.mjs",
+      "file": "tailwind-merge.js",
+      "fileHash": "9477e982",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-7JQ2TOB5": {
+      "file": "chunk-7JQ2TOB5.js"
+    },
+    "chunk-463A4FEK": {
+      "file": "chunk-463A4FEK.js"
+    },
+    "chunk-QN6Y7LV7": {
+      "file": "chunk-QN6Y7LV7.js"
+    },
+    "chunk-SCAKQUQN": {
+      "file": "chunk-SCAKQUQN.js"
+    },
+    "chunk-2TUXWMP5": {
+      "file": "chunk-2TUXWMP5.js"
+    }
+  }
+}
